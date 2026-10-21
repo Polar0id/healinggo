@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.75rem;
+  --background: 37 40% 98%;
+  --foreground: 154 18% 18%;
+  --card: 0 0% 100%;
+  --card-foreground: 154 18% 18%;
+  --primary: 178 72% 23%; /* teal / healing ocean #0d5f5a */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 40 25% 94%;
+  --secondary-foreground: 154 18% 18%;
+  --muted: 40 20% 93%;
+  --muted-foreground: 154 10% 45%;
+  --accent: 28 85% 55%; /* warm orange / amber #ea7a24 */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 37 20% 88%;
+  --input: 37 20% 88%;
+  --ring: 178 72% 23%;
+}
+
+.dark {
+  --background: 195 35% 10%;
+  --foreground: 40 25% 95%;
+  --card: 195 30% 14%;
+  --card-foreground: 40 25% 95%;
+  --primary: 178 60% 45%;
+  --primary-foreground: 195 35% 10%;
+  --secondary: 195 25% 20%;
+  --secondary-foreground: 40 25% 95%;
+  --muted: 195 25% 18%;
+  --muted-foreground: 195 15% 65%;
+  --accent: 28 85% 55%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 195 20% 22%;
+  --input: 195 20% 22%;
+  --ring: 178 60% 45%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Noto Serif', serif;
+}
+
+/* Custom scrollbar hide utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
